@@ -3,11 +3,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-
 # 指定该服务端口
 server:
   port: 8763
-
 # 指定该服务名称(也是显示在注册中心里的名称)
 spring:
   application:

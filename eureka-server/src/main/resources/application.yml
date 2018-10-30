@@ -1,12 +1,2 @@
 server:
-port: 8761
-
-eureka:
-instance:
-hostname: localhost
-client:
-#设置registerWithEureka,fetchRegistry为false,来表明自己是一个eureka server.
-registerWithEureka: false
-fetchRegistry: false
-serviceUrl:
-defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  port: 8761
