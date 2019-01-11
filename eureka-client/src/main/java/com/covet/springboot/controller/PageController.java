@@ -14,6 +14,7 @@ public class PageController {
     @Value("${server.port}")
     String port;
     @RequestMapping("/hi")
+    //http://localhost:8762/hi?name=forezp
     public String home(@RequestParam String name) {
         return "Hello World "+name+",我的端口是:" +port;
     }

@@ -9,6 +9,7 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
+// @EnableDiscoveryClient向服务中心注册
 @EnableDiscoveryClient
 @SpringBootApplication
 @EnableHystrix  // 开启断路器功能  hystix
@@ -20,7 +21,9 @@ public class ServiceRibbonApplication {
     }
 
     @Bean
-    @LoadBalanced    // 该注解实现负载均衡
+    // 通过@LoadBalanced注解表明这个restRemplate开启负载均衡的功能。
+    @LoadBalanced
+    // 向程序的ioc注入一个bean: restTemplate
     RestTemplate restTemplate() {
         return new RestTemplate();
     }

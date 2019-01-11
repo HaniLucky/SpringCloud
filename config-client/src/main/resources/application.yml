@@ -10,9 +10,9 @@ spring:
 server:
   port: 8881
 
-#spring.cloud.config.label Ö¸Ã÷Ô¶³Ì²Ö¿âµÄ·ÖÖ§
+#spring.cloud.config.label æŒ‡æ˜è¿œç¨‹ä»“åº“çš„åˆ†æ”¯
 #spring.cloud.config.profile
-    #dev¿ª·¢»·¾³ÅäÖÃÎÄ¼ş
-    #test²âÊÔ»·¾³
-    #proÕıÊ½»·¾³
-#spring.cloud.config.uri= http://localhost:8888/ Ö¸Ã÷ÅäÖÃ·şÎñÖĞĞÄµÄÍøÖ·¡£
+    #devå¼€å‘ç¯å¢ƒé…ç½®æ–‡ä»¶
+    #testæµ‹è¯•ç¯å¢ƒ
+    #proæ­£å¼ç¯å¢ƒ
+#spring.cloud.config.uri= http://localhost:8888/ æŒ‡æ˜é…ç½®æœåŠ¡ä¸­å¿ƒçš„ç½‘å€ã€‚

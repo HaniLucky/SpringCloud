@@ -7,6 +7,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 
 @EnableDiscoveryClient
+// @EnableFeignClients注解开启Feign的功能：
 @EnableFeignClients
 @SpringBootApplication
 @EnableHystrixDashboard   // 添加熔断器仪表盘
@@ -15,6 +16,7 @@ public class SericeFeignApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SericeFeignApplication.class, args);
 	}
+
 	/*@Bean
 	public ServletRegistrationBean getServlet() {
 		HystrixMetricsStreamServlet streamServlet = new HystrixMetricsStreamServlet();
